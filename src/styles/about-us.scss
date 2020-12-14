@@ -4,10 +4,35 @@
 
   &__preview {
     width: 40%;
+    position: relative;
+    z-index: 5;
 
     img {
       height: 100%;
       object-fit: cover;
+    }
+  }
+
+  &__experience {
+    width: 240px;
+    height: 220px;
+    padding: 1.2rem 9.1rem 0 3.4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #ffb800;
+    color: $white;
+    letter-spacing: 0.2px;
+
+    p {
+      font-family: $playfairDisplayFont;
+      font-size: 7rem;
+      line-height: 9.8rem;
+    }
+
+    span {
+      font-size: 3rem;
+      line-height: 4.1rem;
     }
   }
 
