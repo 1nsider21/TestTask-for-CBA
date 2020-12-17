@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <header class="header">
+    <header id="header" class="header">
       <div class="header__top">
         <div class="header__contacts">
           <div class="phones">
@@ -44,7 +44,6 @@
             </li>
           </ul>
         </div>
-
         <nav class="nav">
           <a href="#" class="logo">
             <img src="styles/images/logo.png"
@@ -71,8 +70,45 @@
           </ul>
           <a href="#" class="nav__callback">Замовити дзвінок</a>
         </nav>
+        <div class="burger-menu">
+          <input type="checkbox" id="burger-menu">
+          <label for="burger-menu">
+            <div class="burger-menu__lines">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </label>
+          <div class="burger-menu__cover">
+            <nav class="burger-menu__nav">
+              <a href="#" class="burger-menu__logo">
+                <img src="styles/images/logo.png"
+                  alt="Logo"
+                  class="logo__img"
+                >
+              </a>
+              <ul class="burger-menu__list">
+                <li class="burger-menu__item">
+                  <a href="#about-us" class="burger-menu__link">Про нас</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#reviews" class="burger-menu__link">Відгуки</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#" class="burger-menu__link">Ціни</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#projects" class="burger-menu__link">Наші роботи</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="#contact-us" class="burger-menu__link">Контакти</a>
+                </li>
+              </ul>
+              <a href="#" class="burger-menu__callback">Замовити дзвінок</a>
+            </nav>
+          </div>
+        </div>
       </div>
-
       <div class="header__promo">
         <h2 class="header__title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h2>
         <p class="header__sub-title">
@@ -80,7 +116,6 @@
         </p>
         <a href="#" class="header__button">Залишити заявку</a>
       </div>
-
       <ul class="header-info">
         <li class="header-info__item">
           Фіксований кошторис
@@ -105,7 +140,7 @@
       </ul>
     </header> <!--Header-->
 
-    <div class="about-us">
+    <div id="about-us" class="about-us">
       <div class="about-us__preview">
         <img src="styles/images/about-us-preview.png" alt="about-us preview">
         <div class="about-us__experience">
@@ -113,7 +148,7 @@
           <span>Років досвіду</span>
         </div>
       </div>
-      <div id="about-us" class="about-us__content">
+      <div class="about-us__content">
         <p class="about-us__heading">Про нас</p>
         <h2 class="about-us__title">Хто ми такі?</h2>
         <p class="about-us__text">
@@ -126,7 +161,48 @@
       </div>
     </div> <!--About-us-->
 
-    <div class="box"></div>
+    <div id="stages" class="stages">
+      <p class="stages__heading">Етапи роботи</p>
+      <h3 class="stages__title">Як ми працюємо?</h3>
+      <div class="stages__container">
+        <div class="stages__item">
+          1
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Виїзд майстра на обєкт для замірів</span>
+        </div>
+        <div class="stages__item">
+          2
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Складання кошторису згідно попередніх домовлень</span>
+        </div>
+        <div class="stages__item">
+          3
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Підписання договору</span>
+        </div>
+        <div class="stages__item">
+          4
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Закупівля матеріалу</span>
+        </div>
+        <div class="stages__item">
+          5
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Вчасна здача проекту</span>
+        </div>
+        <div class="stages__item">
+          6
+          <div class="stages__left"></div>
+          <div class="stages__right"></div>
+          <span class="stages__text">Щасливі замовники</span>
+        </div>
+      </div>
+    </div> <!--Stages-->
 
     <div id="projects" class="projects">
       <p class="projects__heading">Портфоліо</p>
@@ -200,6 +276,55 @@
           <button class="form__button" type="submit">Надіслати</button>
         </form>
       </div>
-    </div>
+    </div> <!--Contact-us-->
+
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__column">
+          <a href="#header" class="footer__logo">
+            <img src="styles/images/logo.png" alt="">
+          </a>
+          <p class="footer__text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="footer__column">
+          <a href="#about-us" class="footer__about">Про нас</a>
+          <a href="#projects" class="footer__about">Портфоліо</a>
+          <a href="#stages" class="footer__about">Етапи роботи</a>
+        </div>
+        <div class="footer__column">
+          <p class="footer__address">
+            <strong>Україна</strong>, м.Львів,
+            Вул. Зелена 230
+          </p>
+          <a href="tel:(097)857-70-47" class="footer__phone">(097)857-70-47</a>
+        </div>
+        <div class="footer__column">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="styles/images/footer-instagram.svg" alt="instagram">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="styles/images/footer-linkedin.svg" alt="linkedin">
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#" class="footer__link">
+                <img src="styles/images/footer-facebook.svg" alt="facebook">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__floor">
+        <p class="footer__rights">
+          2020 © Come Back Agency. All Rights Reserved.
+        </p>
+      </div>
+    </footer> <!--Footer-->
   </body>
 </html>

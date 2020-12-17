@@ -7,6 +7,10 @@
     position: relative;
     z-index: 5;
 
+    @media (max-width: 1420px) {
+      display: none;
+    }
+
     img {
       height: 100%;
       object-fit: cover;
@@ -39,6 +43,14 @@
   &__content {
     position: relative;
     padding: 15rem 19rem;
+
+    @media (max-width: 1200px) {
+      padding: 10rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 5rem;
+    }
 
     img {
       position: absolute;
@@ -75,9 +87,4 @@
     letter-spacing: 0.2px;
     color: $grey;
   }
-}
-
-.box {
-  height: 500px;
-  background-color: #000;
 }
